@@ -9,5 +9,5 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 聲母：p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng
 韻母：a o e i u y ai an ang au en ei eu ia ie in ien iau ieu ian iang ien uen uei ung uai uang yn ye yen ya
 注意聲母 清送氣不送氣濁音三分 且nl不做區分一律以l做表示，n表示孽的聲母 韻母無un
-反查：對於不確定的字可以通過【TAB】鍵上方的【`~】鍵進行反差，比如對 人 字反差，輸入【`ren】後候選字將出現【人 zen2】可以知道通過zen可以輸入【人】字
+反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 人 字反差，輸入【\`ren】後候選字將出現【人 zen2】可以知道通過zen可以輸入【人】字
 由於製作時間和要求，【【當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見】】，多謝合作，祝使用愉快
