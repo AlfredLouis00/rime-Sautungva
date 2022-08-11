@@ -21,5 +21,5 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 5.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**
 #### 参与贡献
 
-1.  本輸入法由**轀輬[alfredlouis0x7@gmail.com； QQ：1739415287 （郵箱同）]**製作。
+1.  本輸入法由`轀輬[alfredlouis0x7@gmail.com； QQ：1739415287 （郵箱同）]`製作。
 2.  漢字讀音參照**漢字音典**與 黃磊.邵東湘語語音研究[D].長沙:湖南師範大學,2005
