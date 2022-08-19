@@ -13,7 +13,7 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 
 #### 使用说明
 
-###邵東話方案
+邵東話方案
 
 1.  本方案基於國際音標進行表示，在表示上極爲接近國際音標。輸入時以不帶聲調輸入但顯示聲調。具有普通話拼音反查功能。
 2.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**箇濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
@@ -22,9 +22,9 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反差，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過zen可以輸入【在】字
 5.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**
 
-###邵東話拼音方案
+邵東話拼音方案
 
-1.本方案在表示上接近於現行漢語拼音方案，以雙寫表示濁音
+1.  本方案在表示上接近於現行漢語拼音方案，以雙寫表示濁音
 2.  聲母：**p b bb k g gg t d dd s r z c zz j q jj x y h hh f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**箇濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
 3.  韻母：**a o e i u y ai an ang ao en ei ou ia ie in ian iao iu ian iang ien uen uei on uai uang yn ye yen ya**
 3.  當前版本具有一定的容錯空間，允許**un**表示**uen**，**清音**也匹配**濁音**等
