@@ -7,9 +7,15 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 
 #### 安装教程
 
-1.  將同一組兩個yaml文件放入rime的【**用戶文件夾**】中。
-2.  找到用戶文件夾中一個名叫【**default.custom.yaml**】的文件，打開（可以使用notepad++或者VS，pycharm之類的軟件打開，或者修改文件擴展名為.txt後由記事本打開，隨後再内部添加上本輸入法的名稱【**\- saudungva**】，與其他幾個輸入法對齊，格式一致。
+電腦 Windows 小狼毫
+
+1.  將同一組兩個yaml文件放入rime的【**用戶文件夾**】中（當然放兩組也可以）。
+2.  找到用戶文件夾中一個名叫【**default.custom.yaml**】的文件，打開（可以使用notepad++或者VS，pycharm之類的軟件打開，或者修改文件擴展名為.txt後由記事本打開，隨後再内部添加上本輸入法的名稱【**\- saudungva**】（或【**\- sautungva_phinin**】，取決於你放入的文件），與其他幾個輸入法對齊，格式一致。
 3.  點擊【**輸入法配置**】選中該輸入法，【**重新部署**】后即可使用。 
+手機 Android 同文
+
+1.  將同一組兩個yaml文件放入【**rime**】文件夾中（當然放兩組也可以，同名的 dict 和 schema 為一組）。
+3.  進入同文輸入法 點擊【**輸入**】然後點擊方案，選中該輸入法，再打開同文點擊【**部署**】后即可使用。
 
 #### 使用说明
 
