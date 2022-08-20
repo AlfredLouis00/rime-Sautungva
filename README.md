@@ -25,7 +25,7 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 邵東話拼音方案
 
 1.  本方案在表示上接近於現行漢語拼音方案，以雙寫表示濁音
-2.  聲母：**p b bb k g gg t d dd s r z c zz j q jj x y h hh f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**箇濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
+2.  聲母：**p b bb k g gg t d dd s r z c zz j q jj x y h hh f v l m n ng**<br>注意聲母清送氣不送氣濁音三分 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
 3.  韻母：**a o e i u y ai an ang ao en ei ou ia ie in ian iao iu ian iang ien uen uei on uai uang yn ye yen ya**
 3.  當前版本具有一定的容錯空間，允許**un**表示**uen**，**清音**也匹配**濁音**等
 4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反差，輸入【\`zai】後候選字將出現【在 zzai5】可以知道通過zen可以輸入【在】字
