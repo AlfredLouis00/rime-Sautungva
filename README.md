@@ -42,5 +42,5 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 
 1.  本輸入法由`轀輬[alfredlouis0x7@gmail.com； QQ：1739415287 （郵箱同）]`製作。
 2.  漢字讀音參照**漢字音典**與 黃磊.邵東湘語語音研究[D].長沙:湖南師範大學,2005
-3.  本輸入法製作過程中收到了許多前輩及朋友的幫助，如B站UP主`shinsoqchiuq`,QQ群的`恋伊`以及邵語微信群`大江游鱼`的幫助
+3.  本輸入法製作過程中受到了許多前輩及朋友的幫助，如B站UP主`shinsoqchiuq`,QQ群的`恋伊`以及邵語微信群`大江游鱼`的幫助
 4.  本輸入法拼音版參考了邵語群`潇湘竹客`的邵陽話轉寫方案
