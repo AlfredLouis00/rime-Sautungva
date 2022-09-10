@@ -26,7 +26,7 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 2.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**箇濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
 3.  韻母：**a o e i u y ai an ang au en ei eu ia ie in ien iau ieu ian iang ien uen uei ung uai uang yn ye yen ya** (聲母與韻母表中以紅色標記
 3.  當前版本具有一定的容錯空間，允許**ou**表示**eu**，**ui**表示**uei**等
-4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過dzen可以輸入【在】字
+4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過dzai可以輸入【在】字
 5.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**
 
 邵東話拼音方案
