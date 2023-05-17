@@ -3,7 +3,7 @@
 #### 介绍
 rime邵東話輸入方案為基於國際音標個湘語邵東話輸入法。  
 如果你曉得國際音標IPA就蠻容易理解本輸入法跟邵東話個讀跟說。  
-This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly based on IPA, with which you can soon learn to type, read and speak
+This is an inputting method of Sautungva, a Xiang Chinese dialect, mostly based on IPA, with which you can soon learn to type, read and speak
 
 #### 安装教程
 
@@ -23,7 +23,7 @@ This is an inputting method of Sautungva, the Xiang Chinese dialect, mostly base
 邵東話方案
 
 1.  本方案基於國際音標進行表示，在表示上極爲接近國際音標。輸入時以不帶聲調輸入但顯示聲調。具有普通話拼音反查功能。
-2.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**箇濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
+2.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**個濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
 3.  韻母：**a o e i u y ai an ang au en ei eu ia ie in ien iau ieu ian iang ien uen uei ung uai uang yn ye yen ya** (聲母與韻母表中以紅色標記
 3.  當前版本具有一定的容錯空間，允許**ou**表示**eu**，**ui**表示**uei**等
 4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過dzai可以輸入【在】字
