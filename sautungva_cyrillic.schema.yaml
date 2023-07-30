@@ -1,0 +1,226 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: sautungva_cyrillic
+  name: 邵東話西里爾
+  version: "0.1"
+  author:
+    - 轀輬 <alfredlouis0x7@gmail.com>
+  description: |
+    「邵東話西里尔拼音自編」，以按鍵ьъшрж輸入五聲（聽感近似的陰陽去聲45皆可以用р表示）
+  dependencies:
+    - luna_pinyin
+
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ ，。, ，． ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+
+engine:
+  processors:
+    #- key_binder
+    - ascii_composer
+    - key_binder
+    - recognizer
+    #- key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@cyrillic
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - table_translator@cyrillic
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller: 
+  alphabet: "OazertyuiopQWqsdfghjklmAwxcvbn,;:="
+  initials: "OazertyuiopQWqsdfghjklmAwxcvbn,;:="
+  delimiter: " '"
+  algebra:
+    #- xform/\d//                 # 無聲調
+    - xform/\|.+$//               # 注释
+    #- xlit OjCukEngSczxqfyvaproldZeAQsmitwbU ёйцукенгшщзхъфывапролджэячсмитьбю
+    - derive/П//
+    - xform/^([aeiouy])/й$1/
+    - derive/(u)ng/$1n/
+    - derive/([iu]a)ng/$1n/
+    - xform/tsh/ҵ/
+    - xform/tch/ꙉ/
+    - xform/kh/қ/
+    - xform/th/ҭ/
+    - xform/ph/ԥ/
+    - xform/tc/ћ/
+    - xform/ng/ҥ/
+    - xform/dz([iy])/ђ$1/
+    - xform/dz/ѕ/
+    - xform/ts/ц/
+    - xform/z([iy])/ҙ$1/
+    - xform/ia/я/
+    - xform/ie/е/
+    - xform/io/ё/
+    - xform/e([un])/ә$1/
+    - xform/ei/єi/
+    - xlit bpmfvdtlgkxnhaouyeszci бпмфвдтлгкхњһаоуюэсзщи
+    #- xlit bpmfvdtlgkxnhaouyeszc бпмфвдтлгкхњһаоуюэсзщ
+    #- xform/iа/я/
+    #- xform/iэ/е/
+    #- xform/io/ё/
+    #- xform/э([уњ])/ә$1/
+    #- xform/юә/юэ/
+    #- xform/эi/єi/
+    #- xform/i/и/
+    #- derive/њ/н/
+    #- derive/һ/хх/
+    #- derive/ҵ/цх/
+    #- derive/ꙉ/чх/
+    #- derive/қ/кх/
+    #- derive/ҭ/тх/
+    #- derive/ԥ/пх/
+    #- derive/ћ/ч/
+    #- derive/ҥ/нг/
+    #- derive/ђ/чч/
+    #- derive/ѕ/цц/
+    #- derive/ҙ/з/
+    - derive/њ/y/
+    - derive/һ/QQ/
+    - derive/ҵ/zQ/
+    - derive/ꙉ/xQ/
+    - derive/қ/rQ/
+    - derive/ҭ/nQ/
+    - derive/ԥ/gQ/
+    - derive/ћ/x/
+    - derive/ҥ/yu/
+    - derive/ђ/xx/
+    - derive/ѕ/zz/
+    - derive/ҙ/p/
+    - derive/ә/A/
+    - derive/є/A/
+    - derive/й//
+    - derive/к([012345])/$1/
+    - derive/п([012345])/$1/
+    - derive/т([012345])/$1/
+    - derive/м([012345])$/н$1/
+    - "derive/1/,/"
+    - "derive/2/W/"
+    - "derive/3/i/"
+    - "derive/4/h/"
+    - "derive/5/m/"
+    - "derive/5/h/"
+    - "derive/[12345]//"
+    - "xlit|ёйцукенгшщзхъфывапролджэячсмитьбюѕ|OazertyuiopQWqsdfghjklmAwxcvbn,;:=|"
+    - fuzz/^([OazertyuiopQWqsdfghjklmAwxcvbn]).+$/$1/
+    
+
+    
+translator:
+  dictionary: sautungva
+  spelling_hints: 10
+  prism: sautungva_cyrillic
+  preedit_format:
+    - xform/\|.+$//               # 注释
+    - "xlit|OazertyuiopQWqsdfghjklmAwxcvbn,;:=|ёйцукенгшщзхъфывапролджэячсмитьбюѕ|"
+  comment_format:
+    - xform ([aeiou])(ng?)([012345]) $1$3$2
+    - xform ([aeo])([iuo])([012345]) $1$3$2
+    - xform ng([012345]) n$1g
+    - xform/\|.+$//               # 注释
+    - xform/(sh?)([012345])/$1ь$2/
+    - xform/(z)([012345])/$1ь$2/
+    - xform/tsh/ҵ/
+    - xform/tch/ꙉ/
+    - xform/kh/қ/
+    - xform/th/ҭ/
+    - xform/ph/ԥ/
+    - xform/tc/ћ/
+    - xform/n([012345]?)g/ҥ$1/
+    - xform/dz([iy])/ђ$1/
+    - xform/dz/ѕ/
+    - xform/ts/ц/
+    - xform/z([iy])/ҙ$1/
+    - xform/i([012345]?)a/я$1/
+    - xform/i([012345]?)e/е$1/
+    - xform/i([012345]?)o/ё$1/
+    - xform/e([012345]?)([un])/ә$1$2/
+    - xform/e([012345]?)i/є$1i/
+    - xform/([яaә])([012345]?)u/$1$2ү/
+    - xform/е([012345]?)u/ӛ$1ү/
+    - xlit bpmfvdtlgkxnhaouyeszci бпмфвдтлгкхњһаоуюэсзщи
+    - xform 1 ̄
+    - xform 2 ́
+    - xform 3 ̌
+    - xform 4 ̀
+    - xform 5 ̣
+
+cyrillic:
+  tag: cyrillic
+  dictionary: cyrillic_1
+  spelling_hints: 10
+  enable_user_dict: false
+  prefix: 'i'
+  suffix: "'"
+  tips: 〔西里爾〕
+  closing_tips: 〔邵東話〕
+  preedit_format:
+    - "xlit|OazertyuiopQWqsdfghjklmAwxcvbn,;:|ёйцукенгшщзхъфывапролджэячсмитьбю|"
+
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format:
+    - xform/\|.+$//               # 注释
+    - xform/tsh/ҵ/
+    - xform/tch/ꙉ/
+    - xform/kh/қ/
+    - xform/th/ҭ/
+    - xform/ph/ԥ/
+    - xform/tc/ћ/
+    - xform/ng/ҥ/
+    - xform/dz([iy])/ђ$1/
+    - xform/dz/ѕ/
+    - xform/ts/ц/
+    - xform/z([iy])/ҙ$1/
+    - xform/ia/я/
+    - xform/ie/е/
+    - xform/io/ё/
+    - xform/e([un])/ә$1/
+    - xform/ei/єi/
+    - xlit bpmfvdtlgkxnhaouyeszci бпмфвдтлгкхњһаоуюэсзщи
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "^`[abcdefghijklmnopqrestuvwxyz]*'?$"
+    cyrillic: "^i[OazertyuiopQWqsdfghjklmAwxcvbn,;:]*'?$"
