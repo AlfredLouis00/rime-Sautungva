@@ -20,24 +20,34 @@ This is an inputting method of Sautungva, a Xiang Chinese dialect, mostly based 
 
 #### 使用说明
 
-邵東話方案
+**輸入方案詳情也可以參考本人知乎文章**https://zhuanlan.zhihu.com/p/625434395
+
+邵東話方案(`sautungva`, `sautngva_beta`)
 
 1.  本方案基於國際音標進行表示，在表示上極爲接近國際音標。輸入時以不帶聲調輸入但顯示聲調。具有普通話拼音反查功能。
-2.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**個濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
-3.  韻母：**a o e i u y ai an ang au en ei eu ia ie in ien iau ieu ian iang ien uen uei ung uai uang yn ye yen ya** (聲母與韻母表中以紅色標記
-4.  聲調：以 **q r w j**分別輸入**1 2 3 45**聲。考慮到按鍵不足而對於去聲一般人沒有區分的意識且陰陽去聲不會同時出現，故以j同時輸入陰陽去。
-5.  當前版本具有一定的容錯空間，允許**ou**表示**eu**，**ui**表示**uei**等
-6.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過dzai（或者dzaij可以更精準地輸入）可以輸入【在】字
-7.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**
+2.  使用時請將以`stv`開頭多個`dict`文件以及`tcyennie.dict.yaml`, `thezy.dict.yaml`一併放入對應文件夾使用
+3.  聲母：**p ph b k kh g t th d s z c ts tsh dz tc tch x h f v l m n ng**<br>注意聲母清送氣不送氣濁音三分（**tc**跟**ts**個濁音合為一隻**dz** 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母。
+4.  韻母：**a o e i u y ai an ang au en ei eu ia ie in ien iau ieu ian iang ien uen uei ung uai uang yn ye yen ya** (聲母與韻母表中以紅色標記。
+5.  聲調：以 **q r w j**分別輸入**1 2 3 45**聲。考慮到按鍵不足而對於去聲一般人沒有區分的意識且陰陽去聲不會同時出現，故以j同時輸入陰陽去。
+6.  當前版本具有一定的容錯空間，允許**ou**表示**eu**，**ui**表示**uei**等。
+7.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 dzai5】可以知道通過dzai（或者dzaij可以更精準地輸入）可以輸入【在】字。
+8.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**。
 
-邵東話拼音方案
+邵東話拼音方案(`sautungva_phinin`)
 
-1.  本方案在表示上接近於現行漢語拼音方案，以雙寫表示濁音
-2.  聲母：**p b bb k g gg t d dd s r z c zz j q jj x y h hh f v l m n ng**<br>注意聲母清送氣不送氣濁音三分 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母
-3.  韻母：**a o e i u y ai an ang ao en ei ou ia ie in ian iao iu ian iang ien uen uei on uai uang yn ye yen ya** (聲母與韻母表中以藍色標記
-3.  當前版本具有一定的容錯空間，允許**un**表示**uen**，**清音**也匹配**濁音**等
-4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 zzai5】可以知道通過zzai可以輸入【在】字
-5.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**
+1.  本方案在表示上接近於現行漢語拼音方案，以雙寫表示濁音。
+2.  聲母：**p b bb k g gg t d dd s r z c zz j q jj x y h hh f v l m n ng**<br>注意聲母清送氣不送氣濁音三分 且輸入時 **n l** 不做區分一律以 **l** 做表示，**n** 表示孽的聲母。
+3.  韻母：**a o e i u y ai an ang ao en ei ou ia ie in ian iao iu ian iang ien uen uei on uai uang yn ye yen ya** (聲母與韻母表中以藍色標記。
+3.  當前版本具有一定的容錯空間，允許**un**表示**uen**，**清音**也匹配**濁音**等。
+4.  反查：對於不確定的字可以通過【TAB】鍵上方的【\`】鍵進行反差，比如對 在 字反查，輸入【\`zai】後候選字將出現【在 zzai5】可以知道通過zzai可以輸入【在】字。
+5.  **當前版本的輸入法收字不夠全面，未進行詞語編寫，可能存在相當多的問題，歡迎各位通過QQ或者郵箱與我聯係提供對該輸入法的改進意見**。
+
+邵東話西里爾方案(`sautungva_cyrillic`)
+
+1. 本方案建議在安卓手機上配合`tongwenfeng_custom_cyrillic.trime`主題使用。
+2. 使用時請放入`sautungva.dict.yaml`和`sautungva_cyrillic.schema.yaml`。
+3. 可以使用反查（但是由於鍵位問題可能不太好用）
+4. 聲母韻母等參考邵東話方案和知乎文章。
 
 #### 参与贡献
 
