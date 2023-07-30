@@ -1,0 +1,9 @@
+---
+name: "stvemoji"
+version: "23.4.14"
+sort: by_weight
+use_preset_vocabulary: false
+max_phrase_length: 7
+min_phrase_weight: 100
+...
+🤡	ciau3 tsheu3

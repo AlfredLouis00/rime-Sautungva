@@ -1,0 +1,163 @@
+---
+name: "stvtoin"
+version: "23.4.8"
+sort: by_weight
+use_preset_vocabulary: false
+max_phrase_length: 7
+min_phrase_weight: 100
+...
+赛博	cyber
+一屋	i4 u1
+科一	kho1 i1
+重本	dzung5 pen3
+重本線	dzung5 pen3 cien4
+一本	i1 pen3
+一本線	i1 pen3 cien4
+一本	i4 pen3
+一本書	i4 pen3 cy1
+一進群	i4 tcin4 dzyn2
+重開	dzung2 khai1
+坑爾	khen1 n3
+祝爾	tsu1 n3
+踢爾	thia1 n3
+行首	hang2 seu3
+一行	i4 zin2
+一行	i4 hang2
+行路	hen2 lu4
+行路	hang2 lu4
+行路	zin2 lu4
+行路難	zin2 lu4 lan2
+行人	zin2 zen2
+一橫	i4 hen2
+一橫	i4 ven2
+壋所	tang4 s3
+問一問	ven5 i1 ven5
+信爾	cin4 n3
+咬爾	ngau3 n3
+鳥爾	tiau3 n3
+TOPIK	t o p i k
+校改	dziau5 kai3
+服氣	vu2 tchi5
+服從	vu2 dzung2
+衣服	i1 fu4
+何個	ho2 ko4
+石頭骨	sa4 deu2 ku1
+石冰糖	sa4 pin1 dang2
+貓咖	mau1 kha1
+細家子	ci4 ka1 ts3
+大一	da5 i1
+註會	tcy4 khuai5
+TM	t m
+鉛山	ien2 san1
+車子	tshe1 ts3
+瞭解	liau3 kai3
+瞭解	liau3 tcie3
+別個	pe4 ko4
+A棟	a tung4
+B棟	b tung4
+AlphaGo	alphago
+ChatGPT	chatgpt
+一個	i4 ko4
+娛樂	y2 lo1
+一週	i4 tseu1
+一隻	i4 tsa1
+一條	i4 diau2
+一隻	i4 ts1
+一種	i4 tsung3
+吐槽	thu5 dzau2
+不然	pu4 zan2
+好早	xau3 tsau3
+好吵	xau3 tshau3
+不明覺厲	pu4 min2 tcye1 li4
+打野	ta3 ie3
+PDF	p d f
+平A	bin2 a
+平A流	bin2 a lieu2
+侄儿子	ts4 e0 ts3
+不然	ng5 ts3
+不錯	ng5 tsau4
+不錯	ng5 tsho5
+划水	va2 suei3
+CSGO	c s g o
+叫花子	kau4 fa1 ts3
+追更	tsuei1 ken1
+一號	i1 hau4
+統計量	thung3 tci4 liang4
+VPN	v p n
+赤腳	tsha1 tcio1
+乾陵	dzien2 lin2
+倒是	tau4 z5
+晕倒	yn1 tau3
+倒垃圾	tau4 la1 tci1
+打到	ta3 tau4
+打倒	ta3 tau3
+財會	dzai2 khuai5
+纔會	dzai2 vei5
+會計	khuai5 tci4
+一個	i4 ko4
+一比	i4 pi3
+一比一	i1 pi3 i1
+重来	dzung2 lai2
+重新	dzung2 cin1
+重量	dzung5 liang5
+重要	dzung5 iau1
+時間	dzie2 ka1
+時間	z2 kan1
+聶聶	le1 le1
+隔差	ke1 tsha1
+翼	ie4 ka1
+葉噶	ie4 ka1
+翼翮	ie4 ka1
+彆淡	pie1 dan5
+系統	ci4 thung3
+邵東一中	sau4 tung1 i1 tsung1
+一中	i1 tsung1
+十中	s4 tsung1
+十中	phau5 tsung1
+鎮一中	tsen4 i1 tsung1
+城區一中	dzen2 tchy1 i1 tsung1
+一完小	i1 vang2 ciau3
+欺負	tchia1 bo0
+欺負	tchi1 vu5
+會做	vei5 tso4
+會做	vei5 tseu4
+會址	vei5 ts3
+奇偶	tci1 ngeu3
+奇數	tci1 su4
+喜好	ci3 xau4
+好帥	xau3 suai4
+行走	zin2 tseu3
+銀行	in2 hang2
+行李	zin2 li3
+行列	hang2 lie4
+行路	hang2 lu4
+行動
+困難	khuen5 lan2
+難點	lan2 tien3
+難處	lan2 tchy5
+難處	lan2 tchy3
+難以	lan2 i3
+難易	lan2 i4
+難懂	lan2 tung3
+難得	lan2 te1
+難道	lan2 dau5
+難打	lan2 ta3
+災難	tsai1 lan0
+難民	lan4 min2
+處理	tchy3 li3
+處所	tchy5 so3
+還沒	hai2 mei2
+麼子	mo3 ts0
+麼子	mo3 ts3
+麼子	mo3 ts4
+不要	ng4 iau4
+不要	pu4 iau4
+噴嚏	fen4 tchieu1
+噴嚏	phen1 thi0
+剁辣椒	to4 la0 tciau1
+剁辣椒	to4 la4 tciau1
+逗號	deu5 hau0
+爲啥	vei5 sa3
+死一死	s3 i4 s3
+樂器	io4 tchi1
+樂器	ye4 tchi1

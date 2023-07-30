@@ -1,0 +1,204 @@
+---
+name: "tcyennie"
+version: "0.11"
+sort: by_weight
+...
+#人名
+米什金	mishkin||美Frederic_Stanley_Rick_Mishkin
+辛欽	xintcin||蘇Александр_Яковлевич_Хинчин
+那湯松	natanson||蘇Исидор_Павлович_Натансон
+施利亞耶夫	shirjajev||蘇Альберт_Николаевич_Ширяев
+拉普拉斯	laplace||法Pierre-Simon_marquis_de_Laplace
+洛必達	lo4 pit4 ta4||法Guillaume_de_l'Hôpital
+洛必達	lhospital||法Guillaume_de_l'Hôpital
+基赫曼	tci1 xo4 man4||苏Иосиф_Иллич_Гихман
+基赫曼	gixman||蘇Иосиф_Иллич_Гихман
+哈耶克	hayek||奧地利Friedrich August von Hayek
+哈耶克	xa1 ie1 khe1||奧地利Friedrich August von Hayek
+亞里士多德	aristoteliis||古希Αριστοτέλης
+亞里士多德	ia1 li3 z5 to1 tek1||古希Αριστοτέλης
+帕斯卡	pascal||法Blaise_Pascal
+帕斯卡	pha5 s1 kha3||法Blaise_Pascal
+伯努利	bernoulli||瑞Jacob_Bernoulli
+龐加萊	poincare||法Henri_Poincaré
+李雅普諾夫	ljapulov||蘇Александр_Михайлович_Ляпулов
+李雅普諾夫	li3 ia3 phu3 lo4 fu1||蘇Александр_Михайлович_Ляпулов
+李普希兹	lipschitz||德Lipschitz
+李普希兹	li3 phu3 ci1 ts1||德Lipschitz
+高鴻業	kau1 hung2 ie4||中
+曼昆	man4 khuen1||美Mankiw
+曼昆	mankiw||美Mankiw
+歐拉	ngeu1 la1||瑞士Euler
+歐拉	euler||瑞士Euler
+漢謨拉比	xan4 mo4 la1 pi3||古巴比倫Hammorabi
+漢謨拉比	hammurabi||古巴比倫Hammorabi
+拿破崙	la2 pho5 luen2||法Napoleon
+拿破崙	napoleon||法Napoleon
+阿諾爾德	arnolwd||蘇Арнольд
+阿諾爾德	a1 e3 lo4 te4||蘇Арнольд
+菲赫金哥爾茨	fei1 xo4 tcin1 ko1 e3 dz2||蘇Фихтенгольц
+菲赫金哥爾茨	fixtjengolwts||蘇Фихтенгольц
+吉米多維奇	tci4 mi3 to1 vei2 dzi2||蘇Демидович
+吉米多維奇	djemidovidz||蘇Демидович
+吉米多維奇	djemidovitc||蘇Демидович
+柯斯特利金	kho1 s1 the5 li4 tcin1||蘇Кострикин
+柯斯特利金	kostrikin||蘇Кострикин
+卓里奇	tso1 li3 dzi2||蘇Зорич
+卓里奇	zoritc||蘇Зорич
+卓里奇	zoridz||蘇Зорич
+柯爾莫戈洛夫	kho1 e3 mo4 ko1 lo4 fu1||蘇Колмогоров
+柯爾莫戈洛夫	kolmogorov||蘇Колмогоров
+佛明	fu4 min2||蘇Фомин
+佛明	fomin||蘇Фомин
+拉夫連季耶夫	la1 fu1 lien2 tci4 ia3 fu1||蘇Лаврентьев
+拉夫連季耶夫	lavrjentwjev||蘇Лаврентьев
+沙巴特	sa1 pa1 the5||蘇Шабат
+沙巴特	shabat||蘇Шабат
+勒貝格	le4 pei4 ke4||法Lebesgue
+勒貝格	lebesgue||法Lebesgue
+黎曼	li2 man4||德Riemann
+黎曼	lriemann||德Riemann
+帕纍托	pareto||意Pareto
+帕纍托	pha5 luei3 tho1||意Pareto
+希爾伯特	hilbert||德David_Hilbert
+希爾伯特	ci1 e3 pe1 thek4||德David_Hilbert
+希爾伯特空間
+帕纍托改進
+#E&F
+微經	uei1 tcin1
+宏經	hung2 tcin1
+微觀	uei1 kuang1
+微觀	micro
+宏觀	macro
+宏觀	hung2 kuang1
+經濟學	economics
+經濟學	tcin1 tci4 cye4
+西方	lwestern
+西方	ci1 fang1
+邊際	pien1 tci4
+邊際	maginal
+效用	ziau5 yng4
+效用	utility
+博弈論	gametheory
+持有期收益率	hpr||Holding_Periold_Return
+邊際效用	mu||Maginal_Utility
+國際貨幣基金組織	imf||International_Monatary_Fund
+特別提款權	sdrs||Special_Drawing_Rights
+大額可轉讓定期存單	ncds||Negotiable_Certificates_of_Deposits
+信用違約互換	cds||Credit_Default_Swap
+市盈率	pe||Price_to_Earning_Ratio
+息稅前利潤	ebit||Earnings_Before_Interest_and_Tax
+歐洲中央銀行	ecb||European_Central_Bank
+美國證券交易會員會	sec||the_U.S._Securities_and_Exchange_Commission
+英國證券期貨局	sfa||The_Securities_and_Futures_Authority
+量化寬鬆	aqe||Quantitative_Easing
+美國財政部	ust||United_States_Treasury	1
+美國短期國債	ust||United_States_Treasury	2
+倫敦銀行同業拆放利率	libor||London_Inter_bank_Offered_Rate
+上海銀行同業拆放利率	shibor||Shanghai_Inter_bank_Offered_Rate
+淨現值	npv||Net_Present_Value
+日淨率	pb||Price/Book_Value
+替代率	arateofsubstitution
+替代率	aros||Rate_of_Substitution
+替代率	thi5 dai5 ly4
+到期收益率	ytm||Yield_to_Maturity
+美國商品交易所	ace||American_Commodity_Exchange
+資產擔保證券	abs||Asset_Backed_Securities
+銀行承兌匯票	ba||Bank_Acceptance
+不記名債券	bb||Bearer_Bond
+到期日	maturity
+共同基金	mf||Mutual_Funds
+共同基金	mutualfunds
+最低貸款利率	mlr||Minimum_Lending_Rate
+跨國公司	mnc||Multinational_Corporation
+抵押	mortgage
+抵押	ti3_ia1
+場外交易所	otc||over-the-counter_market
+稅前利潤	pbt||Profit_Before_Tax
+優先股	pfd||Preferred_Stock
+優先股	preferredstock
+逆回購協議	arrp||Reverse_Repurchase_Agreement
+風險投資	vc||Venture_Capital
+國庫券	tb||Treasury_Bill
+企業資源企劃	erp||Enterprise_Resource_Planning
+股本回報率	aroe||Return_On_Equity
+A股	a ku3
+B股	b ku3
+F股	f ku3
+期权	options
+期货	futures
+套期保值	hedge
+
+#CS
+計算機科學	cs||Computer_Science
+數據	data
+結構	structure
+算法	algorithm
+GPT	g p t
+ChatSTUPID	c h a t s t u p i d
+元組	tuple
+安卓	android
+機器學習	ml||Machine_Learning
+
+#M
+多元函數微分學
+概率密度函數	pdf||Probility_Density_Function
+特徵方程	characterizedequations
+特徵根	eigenvalue
+特徵根	the5 tsen1 ken1
+可列
+導數
+殘差	residual
+異方差	heteroscedasticity
+LaTeX	latex
+Α	calpha
+α	alpha
+Β	cbeta
+β	beta
+Γ	cgamma
+γ	gamma
+Δ	cdelta
+δ	delta
+Ε	cepsilon
+ε	epsilon
+Ζ	czeta
+ζ	zeta
+Η	ceta
+η	eta
+Θ	ctheta
+θ	theta
+Ι	ciota
+ι	iota
+Κ	ckappa
+κ	kappa
+Λ	clambda
+λ	lambda
+Μ	cmu
+μ	mu
+Ν	cnu
+ν	nu
+Ξ	cxi
+ξ	xi
+Ο	comicron
+ο	omicron
+Π	cpi
+π	pi
+Ρ	crho
+ρ	lrho
+Σ	csigma
+σ	sigma
+ς	sigmae
+Τ	ctau
+τ	tau
+Υ	cupsilon
+υ	upsilon
+Φ	cphi
+φ	phi
+Χ	cchi
+χ	chi
+Ψ	cpsi
+ψ	psi
+Ω	comega
+ω	omega
+σ-域	sigma y4
+GPT	g p t

@@ -2,29 +2,40 @@
 # encoding: utf-8
 
 schema:
-  schema_id: sautungva
-  name: 邵東話
+  schema_id: sautungva_beta
+  name: 邵東話測試
   version: "0.1"
   author:
     - 轀輬 <alfredlouis0x7@gmail.com>
   description: |
-    「邵東話拼音自編」，以按鍵qrwj輸入五聲（聽感近似的陰陽去聲45皆用j表示）
+    「邵東話拼音魔改」，以按鍵qrwj輸入五聲（聽感近似的陰陽去聲45皆用j表示）
   dependencies:
     - luna_pinyin
     - kana
     - oldhangeul
     - cyrillic
-
+    - njerchet
+#, trad_tw, trad_hk
+#, 臺灣 , 香港 
+  icon: icon/ciang_khai.ico
 switches:
-  - name: ascii_mode
+  - options: [noop, simplification]
+    states: [ 漢字, 汉字  ]
+  - options: [noop, trad_tw]
+    states: [ 大陸, 臺灣  ]
+  - name: ascii_mode 
     reset: 0
     states: [ 中文, 西文 ]
   - name: full_shape
+    reset: 0
     states: [ 半角, 全角 ]
   - name: ascii_punct
+    reset: 0
     states: [ ，。, ，． ]
-  - name: simplification
-    states: [ 漢字, 汉字 ]
+  #- name: pinyin
+  #  reset: 1
+  #- send: BACK
+
 
 engine:
   processors:
@@ -58,61 +69,167 @@ engine:
     - reverse_lookup_translator
   filters:
     - simplifier
+    - simplifier@trad_tw
+    - simplifier@trad_hk
+    #- simplifier@pinyin
+    - reverse_lookup_filter@luna_pinyin
     - uniquifier
 
+luna_pinyin:
+  dictionary: njerchet
+
+trad_tw:
+  option_name: trad_tw
+  opencc_config: t2tw.json
+  tags: abc
+  tips: none
+  show_in_comment: false
+
+trad_hk:
+  option_name: trad_hk
+  opencc_config: t2hk.json
+  tags: abc
+  tips: none
+  show_in_comment: false
+
 speller:
-  alphabet: zyxwvutsrqponmljkihgfedcba-
+  alphabet: "zyxwvutsrqponmljkihgfedcba"
   initials: abcdefghiklmnopstuvwxyz
   delimiter: " '"
   algebra:
     #- xform/\d//                 # 無聲調
     - xform/\|.+$//               # 注释
-    - derive/П//
-    - derive/ieu/iu/
-    - derive/uei/ui/
-    - derive/au/ao/
-    - derive/eu/ou/
+    - "derive/П//"
+    #- derive/ieu$/iu/
+    #- derive/cie/cue/
+    #- derive/uei$/ui/
+    #- derive/au$/ao/
+    #- derive/eu$/ou/
+    #- derive/^tc/yc/
     #- derive/[aeiuy]n$/$1ng/
     #- derive/ang$/an$/
     - derive/^dz/tz/
     - derive/^ts/ds/
     - derive/^tc/dc/
-    - derive/^tc([iy])/ts$1/
-    - derive/^tch([iy])/tsh$1/
-    - derive/^ts([aeuo])/tc$1/
-    - derive/^tsh([aeuo])/tch$1/
-    - derive/[iy]en$/[iy]an$/
+    #- derive/^tc([iy])/tx$1/
+    #- derive/^t/y/
+    #- derive/ng/nf/
+    #- derive/ng/nh/
+    #- derive/^([bpmfdtnlgkhscz])e([iu])/$1z$2/
+    #- derive/^([ptk])h([aeou])/$1j$2/
+    #- derive/^(ts)h([aeou])/$1j$2/
+    #- derivr/^(tc)h([iy])/$1j$2/
+    #- derive/^tc([iy])/ts$1/
+    #- derive/^tch([iy])/tsh$1/
+    #- derive/^ts([aeuo])/tc$1/
+    #- derive/^tsh([aeuo])/tch$1/
+    #- derive/[iy]en$/[iy]an/
+    - derive/([ui])ang/$1an/
     - derive/(u)ng/$1n/
-    - derive/([iu]a)ng/$1n/
-    - derive/^kh/lh/
-    - derive/^tci/txi/
-    - derive/m([012345])$/n$1/
+    - derive/([aeiouy])m/$1n/
+    #- derive/^kh/lh/
+    #- derive/^([ui])/y$1/
     - xform/1$/q/
     - xform/2$/r/
     - xform/3$/w/
     - xform/[45]$/j/
-    - xform/k([0qrwj])/к$1/
-    - xform/p([0qrwj])/п$1/
-    - xform/t([0qrwj])/т$1/
-    - derive/к/k/
-    - derive/к//
-    - derive/п/p/
-    - derive/п//
-    - derive/т/t/
-    - derive/т//
     - derive/[0qrwj]$//
-    - derive/([auy])n/$1b/
-    - abbrev/^([abcdefghiklmnopstuvxyz])([aoeiuy]).+$/$1/
-    - abbrev/^(ts|dz|tc|tsh|tch|ph|th|kh)([aoeiuy]).+$/$1/
-    - abbrev/^([aoeiuy]).+$/$1/
+    - derive/([aieuy])n/$1b/
+    #- derive/^ng/bg/
+    - derive/liang/lia/
+    #- derive/([aiueo])-/$1$1/
+    #- "derive/\[[a-z]*\]//"
+    #- "derive/\[//"
+    #- "derive/\]//"
+    - fuzz/^(ts|dz|tc|tsh|tch|[tpk]h)[aeuiyo].+$/$1/
+    - fuzz/^([aoeiu]).+$/$1/
+    - fuzz/^([abcdefghikmnopstuvxz])[aeuiyo].+$/$1/
+    - fuzz/^y[ean].+$/y/
+    - fuzz/^l[aeuiyo].+$/l/
+    #- derive/^(ts|dz|tc|tsh|tch|ph|th|kh)([aoeiuy]).+$/$1/
+    #- derive/^([aoeiuy]).+$/$1/
+    #- derive/^([abcdefghiklmnopstuvxyz])([aoeiuy]).+$/$1/
     
     
 translator:
   dictionary: sautungva
-  spelling_hints: 10
-  prism: sautungva
+  spelling_hints: false
+  prism: sautungva_beta
   preedit_format:
     - xform/\|.+$//               # 注释
+    - xform/s([aoeu])/с$1/
+    - xform/z([aoeu])/з$1/
+    - xform/tsh([aoeu])/ц$1/
+    - xform/ng/ŋ̍/
+    - xform/ŋ̍([ao])/ŋ$1/
+    - xform/([aoeiuy])ŋ̍/$1ŋ/
+    - xform/m/m̍/
+    - xform/m̍([aoeiu])/m$1/
+    - xform/([aoeiuy])n/$1н/
+    - xform/([aoeiuy])m̍/$1m/
+    - xform/ni/ȵi/
+    - xform/n/n̍/
+    - xform/([ktp]|ts|tc)h/$1ʰ/
+    - xform/([aoeiuy])k/$1k̚/
+    - xform/([aoeiuy])t/$1t̚/
+    - xform/([aoeiuy])p/$1p̚/
+    - xform/eн/ən/
+    - xform/([iy])ən/$1en/
+    - xform/eu/əɯ/
+    - xform/au/aɯ/
+    - xform/ei/еi/
+    - xform/e/ɛ/
+    - xform/c/ɕ/
+    - xform/z([iy])/ʑ$1/
+    - xform/н/n/
+    - xform/е/e/
+    - xform/([sz])/$1ɿ/
+    - xform/ɿʰ/ʰɿ/
+    - xform/h/ɣ/
+    - xform/с/s/
+    - xform/з/z/
+    - xform/ц/tsʰ/
+  comment_format:
+    #- xform/\|.+$//               # 注释
+    - xform/s([aoeu])/с$1/
+    - xform/z([aoeu])/з$1/
+    - xform/tsh([aoeu])/ц$1/
+    - xform/ng/ŋ̍/
+    - xform/ŋ̍([ao])/ŋ$1/
+    - xform/([aoeiuy])ŋ̍/$1ŋ/
+    - xform/m/m̍/
+    - xform/m̍([aoeiu])/m$1/
+    - xform/([aoeiuy])n/$1н/
+    - xform/([aoeiuy])m̍/$1m/
+    - xform/ni/ȵi/
+    - xform/n/n̍/
+    - xform/([ktp]|ts|tc)h/$1ʰ/
+    - xform/([aoeiuy])k/$1k̚/
+    - xform/([aoeiuy])t/$1t̚/
+    - xform/([aoeiuy])p/$1p̚/
+    - xform/eн/ən/
+    - xform/([iy])ən/$1en/
+    - xform/eu/əɯ/
+    - xform/au/aɯ/
+    - xform/ei/еi/
+    - xform/e/ɛ/
+    - xform/c/ɕ/
+    - xform/z([iy])/ʑ$1/
+    - xform/н/n/
+    - xform/е/e/
+    - xform/([sz])/$1ɿ/
+    - xform/ɿʰ/ʰɿ/
+    - xform/h/ɣ/
+    - xform/с/s/
+    - xform/з/z/
+    - xform/ц/tsʰ/
+    - xform/0/⁵/
+    - xform/1/⁵⁵/	# ꜀
+    - xform/2/¹²/	# ꜁
+    - xform/3/³²/	# ꜂
+    - xform/4/³⁵/	# ꜄
+    - xform/5/²⁴/	# ꜅
+    - xform/П/普/
 
 kana:
   tag: kana
@@ -262,15 +379,26 @@ reverse_lookup:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
 
+#pinyin:
+#    opencc_config: pinyin.json
+#    option_name: pinyin
+#    show_in_comment: true
+#    comment_format:
+#      - xform/&nbsp/ /
+#    tags:
+#      - abc
+#    tips: all
+
 punctuator:
   import_preset: default
 
 key_binder:
   import_preset: default
   bindings:
+    #- { when: always, accept: minus, send: minus }
     #- { when: always, accept: semicolon, send: m }
     #- { when: always, accept: colon, send: M }
-    #- { when: always, accept: m, send: minus }
+    #- { when: always, accept: m, send: semicolon }
     #- { when: always, accept: M, send: colon }
     #- { when: always, accept: q, send: a }
     #- { when: always, accept: a, send: q }
@@ -280,17 +408,17 @@ key_binder:
     #- { when: always, accept: A, send: Q }
     #- { when: always, accept: W, send: Z }
     #- { when: always, accept: Z, send: W }
-    #- { when: always, accept: Control+semicolon, send: M }
+    #- { when: always, accept: Shift_L+semicolon, send: M }
     #- { when: has_menu, accept: Shift_L, send: commit }
-    - { when: paging, accept: comma, send: Page_Up }
-    - { when: has_menu, accept: period, send: Page_Down}
+    #- { when: paging, accept: minus, send: Page_Up }
+    #- { when: has_menu, accept: equal, send: Page_Down}
 
 
 recognizer:
   import_preset: default
   patterns:
     reverse_lookup: "^`[abcdefghijklmnopqrestuvwxyz]*'?$"
-    kana: "^j[abcdefghijkmnopqrestuwxyz-]*'?$"
+    kana: "^j[abcdefghijkmnopqrestuwxyz]*'?$"
     hangeul: "^w[abcdefghijklmnopqrestuvwxyzQWERTYADFGZXCV]*'?$"
-    cyrillic: "^r[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ;]*'?$"
+    cyrillic: "^r[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]*'?$"
     hannom: "^q[abcdefghijklmnopqrestuvwxyz]*'?$"
