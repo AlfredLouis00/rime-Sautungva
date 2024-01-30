@@ -1,6 +1,9 @@
 # RIME Inputting Method of Sautungva<br>基於rime平臺的邵東話輸入方案
 
+[toc]
+
 ## 介绍
+
 rime邵東話輸入方案為基於國際音標個湘語邵東話輸入法。  
 如果你曉得國際音標IPA就蠻容易理解本輸入法跟邵東話個讀跟說。  
 This is an inputting method of Sautungva, a Xiang Chinese dialect, mostly based on IPA, with which you can soon learn to type, read and speak
@@ -20,7 +23,7 @@ This is an inputting method of Sautungva, a Xiang Chinese dialect, mostly based 
 
 ## 使用说明
 
-**輸入方案詳情也可以參考本人知乎文章**https://zhuanlan.zhihu.com/p/625434395
+**輸入方案詳情也可以參考本人(知乎文章)[https://zhuanlan.zhihu.com/p/625434395]**
 
 ### 邵東話方案(`sautungva`, `sautngva_beta`)
 
