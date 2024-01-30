@@ -1,6 +1,15 @@
 # RIME Inputting Method of Sautungva<br>基於rime平臺的邵東話輸入方案
 
-[toc]
+- [RIME Inputting Method of Sautungva<br>基於rime平臺的邵東話輸入方案](#rime-inputting-method-of-sautungva<br>基於rime平臺的邵東話輸入方案)
+  - [介绍](#介绍)
+  - [安装教程](#安装教程)
+    - [電腦 Windows 小狼毫](#電腦-windows-小狼毫)
+    - [手機 Android 同文/中文](#手機-android-同文中文)
+  - [使用说明](#使用说明)
+    - [邵東話方案(`sautungva`, `sautngva_beta`)](#邵東話方案sautungva-sautngva_beta)
+    - [邵東話拼音方案(`sautungva_phinin`)](#邵東話拼音方案sautungva_phinin)
+    - [邵東話西里爾方案(`sautungva_cyrillic`)](#邵東話西里爾方案sautungva_cyrillic)
+  - [参与贡献](#参与贡献)
 
 ## 介绍
 
@@ -23,7 +32,7 @@ This is an inputting method of Sautungva, a Xiang Chinese dialect, mostly based 
 
 ## 使用说明
 
-**輸入方案詳情也可以參考本人(知乎文章)[https://zhuanlan.zhihu.com/p/625434395]**
+**輸入方案詳情也可以參考本人[知乎文章](https://zhuanlan.zhihu.com/p/625434395)**
 
 ### 邵東話方案(`sautungva`, `sautngva_beta`)
 
